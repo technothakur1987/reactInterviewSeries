@@ -1,30 +1,9 @@
- let [word, setword] = useState(" ");
-  let [counter, setcounter] = useState(0);
-  let [wordarray, setwordarray] = useState('')
-   
+Parent component ?
+- Input box : we need to enter a statement (ex. How are you?)
+- button : When you click on this button, we need to pass the entered statement to child component.
+Child component ?
+- we need to receive the incoming statement and display the each word with 2sec delay on screen.
 
-  useEffect(()=>{
-    let str = inputValue;
-   let wordarrayw = str.split(" ");
-   console.log(wordarrayw)
-   setwordarray(wordarrayw)
-   console.log(wordarray)
+? output should be : How --2sec delay-- are --2sec delay-- you?
 
-  },[])
-  
-    useEffect(()=>{
-      setcounter(counter+1)
-
-    },[counter])
-  
-    useEffect(() => {
-      let str = inputValue;
-      let wordarray = str.split(" ");
-      let inter = setInterval(() => {
-        setword(wordarray[counter]);
-        setcounter(counter++);
-        if (counter == wordarray.length) {
-          clearInterval(inter);
-        }
-      }, 2000);
-    }, [word]);
+ test link :-https://showtextapp-reactquestion.netlify.app
