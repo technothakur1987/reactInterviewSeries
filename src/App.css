@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.box{
+  min-height: 50vh;
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.box form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1PX SOLID white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;}
+
+  .box form button{
+    margin-top: 1.5rem;
+    background-color: black;
+    color:white;
+    text-transform: capitalize;
+
+  }
+  .children{
+    min-height: 20vh;
+    background-color: blue;
+    color: red;
+  }
